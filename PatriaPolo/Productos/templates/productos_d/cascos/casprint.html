@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+{% include 'PatriaPoloApp/navbar.html' %}
+<link rel="stylesheet" href="{% static 'PatriaPoloApp/css/productos_descripcion.css' %}">
+<html lang="es">
+<p class="title"><b>- Casco "Animal print" -</b></p> 
+<section class="body">   
+    <div class="container">
+        <div class="img_container">
+            <img src="{% static 'JEPG/casco animal print.jpg' %}" alt="" class="main_img">
+        </div>
+        <div class="thumbnail_container">
+            <img class="thumbnail active" src="{% static 'JEPG/casco animal print.jpg' %}" alt="">
+            <img class="thumbnail" src="{% static 'JEPG/casco animal print 2.jpg' %}" alt="">
+            <img class="thumbnail" src="{% static 'JEPG/casco anmal print rosa.jpg' %}" alt="">
+            <img class="thumbnail" src="{% static 'JEPG/casco anmal print rosa 3.jpg' %}" alt="">
+        </div>
+    </div>
+</section>
+<section class="container__text">
+    <p class="description">
+        Descripcion del producto</p>
+    <p class="text_p">
+        - Casco clasico de polo SF con diseño tipo animal print. <br>
+        - Su exterior está hecho con fibra de vidrio trenzada con tela de softshell impermeable<br>
+        - Incluye orificios de goma de látex que proporcionan ventilación <br>
+        - La parte interior del casco está hecha con un material delgado de espuma negra para un mayor acolchado y comodidad, sistema de sujeción de tres puntos
+    </p>
+    <p class="text_p">Mas detalles: Dos tipos de diseño, el segundo, con detalles rosas.</p>
+    <p class="price">Precio: {{precio__dolar}} ARS - 117 USD</p>
+    <p class="text_p"><i>Categoria: Cascos de polo...</i></p>
+    <div class="button1"><button class="buttoninside">Consultar por este producto!</button></div>
+
+</section>
+<script src="{% static 'PatriaPoloApp/js/products.js' %}"></script>
+{% include 'PatriaPoloApp/footer.html'  %}
+</html>

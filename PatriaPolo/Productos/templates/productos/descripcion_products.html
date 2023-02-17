@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+{% include 'PatriaPoloApp/navbar.html' %}
+<link rel="stylesheet" href="{% static 'PatriaPoloApp/css/productos_descripcion.css' %}">
+<html lang="es">
+<p class="title"><b>- Casco Nro. 3 de prueba -</b></p> 
+<section class="body">   
+    <div class="container">
+        <div class="img_container">
+            <img src="{% static 'PatriaPoloApp/images/casco_pp.jpeg' %}" alt="" class="main_img">
+        </div>
+        <div class="thumbnail_container">
+            <img class="thumbnail active" src="{% static 'PatriaPoloApp/images/logopp.jpeg' %}" alt="">
+            <img class="thumbnail" src="{% static 'PatriaPoloApp/images/casco5.jpeg' %}" alt="">
+            <img class="thumbnail" src="{% static 'PatriaPoloApp/images/casco3.jpeg' %}" alt="">
+            <img class="thumbnail" src="{% static 'PatriaPoloApp/images/casco4.jpeg' %}" alt="">
+        </div>
+    </div>
+</section>
+<section class="container__text">
+    <p class="description">
+        Descripcion del producto</p>
+    <p class="text_p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Autem necessitatibus iure voluptatibus voluptate, dolor voluptatum at beatae! Incidunt voluptas perspiciatis, <br>
+        maiores modi nostrum tempore officia odio ea laborum quas pariatur!
+    </p>
+    <p class="text_p">Medidas: <br> Estas son las medidas de los productos.</p>
+    <p class="price">1500</p>
+    <p class="text_p"><i>Categoria: Esta es la categoria de los productos.</i></p>
+    <div class="button1"><button class="buttoninside">Consultar por este producto!</button></div>
+
+</section>
+<script src="{% static 'PatriaPoloApp/js/products.js' %}"></script>
+{% include 'PatriaPoloApp/footer.html'  %}
+</html>

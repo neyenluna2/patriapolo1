@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Nunito+Sans:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    ---main-color: #ff961f;
+    ---second-color: #1A1A1A;
+    ---title-color: #1A1A1A;
+    ---text-color: #1A1A1A;
+    ---text-font:  'Noto Sans', sans-serif;
+    ---title-font: 'Nunito Sans', sans-serif;
+    ---text-size-title: 3rem;
+    ---font-weight-title: 2rem;
+    ---font-size-subtitle: 2.6rem;
+    ---font-weight-subtitle: 1.5rem;
+    ---font-size-text: 2rem;
+    ---font-weight-text: 1.2rem;
+ 
+ }
+
+footer{
+    bottom: 0;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    background-image: url('../images/polo2.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    z-index: 1;
+}
+
+footer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: -1;
+
+}
+
+.copyright-container{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.copyright{
+    font-size: 16px;
+    opacity: .4;
+    font-weight: 400;
+}
+
+.footer-menus{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 40%;
+
+}
+
+.footer-container{
+    height: fit-content;
+    width: 100%;
+    padding: 4rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-content-container{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .website-logo{
+    margin-bottom: 1.2rem;
+    font-size: calc(1vw + 25px);
+}
+
+.logopp{
+    color: #fff;
+}
+
+.footer-info, .menu-item-footer{
+    font-size: 15px;
+    line-height: 1.8em;
+    margin: 0.2rem 0;
+    opacity: 0.8;
+    color: rgb(248, 245, 245);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.menu-item-footer:hover{
+    opacity: 1;
+}
+
+.menu-title{
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+
+.social-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+
+.social-link{
+    height: 100%;
+    width: 40px;
+    background-image: url(../images/FacebookBlanco.png);
+    background-size: 70%;
+    background-position: center;
+    margin-right: 1rem;
+    background-repeat: no-repeat;
+}
+
+.social-link:hover{
+    opacity: 0.7;
+}
+
+footer .social-link:nth-of-type(2){
+    background-image: url(../images/TwitterBlanco.png);
+}
+
+footer .social-link:nth-of-type(3){/*Nth of type inside that container*/
+    background-image: url(../images/InstagramBlanco.png);
+    width: 50px;
+    margin-left: .5px;
+
+}
+
+
+/*MEDIA QUERY*/
+@media (max-width: 768px){
+    
+    .footer-container{
+        padding: 2rem; 
+        flex-direction: column;
+    }
+
+    .footer-content-container{
+        width: 100%;
+        padding: 2rem 0;
+        border-bottom: 1px solid #2A2A2A;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content-container:nth-of-type(1){
+        align-items: flex-start;
+    }
+    .footer-content-container:nth-of-type(3){
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .footer-menus{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 1px solid #2A2A2A;
+    }
+
+    .footer-menus .footer-content-container:nth-of-type(1){
+        width: 45%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+    .footer-menus .footer-content-container:nth-of-type(2){
+        width: 45%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+}
+
+
+@media (max-width: 450px){
+
+    footer{
+        bottom: 0;
+        left: 0;
+        height: 500px;
+        width: 100%;
+        background-image: url('../images/polo2.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: rgb(255, 255, 255);
+        background-color: red;
+        z-index: -98;
+    }
+
+    footer::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+        z-index: -1;
+    
+    }
+    
+
+    .footer-container{
+        padding: 2rem; 
+        flex-direction: column;
+    }
+
+    .footer-content-container{
+        width: 100%;
+        padding: 2rem 0;
+        border-bottom: 1px solid #2A2A2A;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content-container:nth-of-type(1){
+        align-items: center;
+    }
+    .footer-content-container:nth-of-type(3){
+        
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .website-logo{
+        text-align: center;
+    }
+
+    .footer-menus{
+        width: 100%;
+        display: flex;
+        justify-content: baseline;
+        align-items: flex-start;
+        border-bottom: 1px solid #2A2A2A;
+    }
+
+    .footer-menus .footer-content-container:nth-of-type(1){
+        width: 45%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+
+    .footer-menus .footer-content-container:nth-of-type(2){
+        width: 45%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+}
+
+@media(max-width: 820px){
+    footer{
+        bottom: 0;
+        left: 0;
+        height: 510px;
+        width: 100%;
+        background-image: url('../images/polo2.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: rgb(255, 255, 255);
+        z-index: -98;
+    }
+
+    footer::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+        z-index: -1;
+    
+    }
+    
+
+    .footer-container{
+        padding: 2rem; 
+        flex-direction: column;
+    }
+
+    .footer-content-container{
+        width: 100%;
+        padding: 2rem 0;
+        border-bottom: 1px solid #2A2A2A;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content-container:nth-of-type(1){
+        align-items: center;
+    }
+    .footer-content-container:nth-of-type(3){
+        
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .website-logo{
+        text-align: center;
+    }
+
+    .footer-menus{
+        width: 100%;
+        display: flex;
+        justify-content: baseline;
+        align-items: flex-start;
+        border-bottom: 1px solid #2A2A2A;
+    }
+
+    .footer-menus .footer-content-container:nth-of-type(1){
+        width: 45%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+
+    .footer-menus .footer-content-container:nth-of-type(2){
+        width: 45%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+ }
+

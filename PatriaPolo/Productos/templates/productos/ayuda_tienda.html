@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+
+    <h2 class="title">Nuestros Productos</h2>
+    <div class="products-container">
+ 
+       <div class="product" data-name="p-1">
+          <img src="{{producto.imagen1.url}}" alt="">
+          <h3 class="product__title">{{producto.nombre}}</h3>
+          <div class="price">{{producto.precio}}</div>
+       </div>
+
+ </div>
+ 
+ <div class="products-preview">
+ 
+    <div class="preview" data-target="p-1">
+       <i class="fas fa-times"></i>
+       <img src="{{producto.imagen1.url}}" alt="">
+       <h3>{{producto.nombre}}</h3>
+       <p>{{producto.short_description}}</p>
+       <div class="price">{{producto.precio}}</div>
+       <div class="buttons">
+          <a href="#" class="cart">Detalles</a>
+       </div>
+      </div>
+
+
+    <div class="preview" data-target="p-2">
+       <i class="fas fa-times"></i>
+       <img src="{% static 'PatriaPoloApp/images/casco_pp.jpeg' %}" alt="">
+       <h3>Producto No. 2</h3>
+       <p>Descripcion</p>
+       <div class="price">$2.00</div>
+       <div class="buttons">
+          <a href="#" class="cart">Detalles</a>
+       </div>
+    </div>
+ 
+    <div class="preview" data-target="p-3">
+       <i class="fas fa-times"></i>
+       <img src="{% static 'PatriaPoloApp/images/casco4.jpeg' %}" alt="">
+       <h3>Prodcuto No. 3</h3>
+       <p>Descripcion corta del prodcuto...</p>
+       <div class="price">$2.00</div>
+       <div class="buttons">
+          <a href="#" class="cart">Detalles</a>
+       </div>
+    </div>
+ 
+    <div class="preview" data-target="p-4">
+       <i class="fas fa-times"></i>
+       <img src="{% static 'PatriaPoloApp/images/casco5.jpeg' %}" alt="">
+       <h3>Producto No. 4</h3>
+       <p>Descripcion corta del prodcuto...</p>
+       <div class="price">$2.00</div>
+       <div class="buttons">
+          <a href="#" class="cart">Detalles</a>
+       </div>
+    </div>
+ 
+    <div class="preview" data-target="p-5">
+       <i class="fas fa-times"></i>
+       <img src="{% static 'PatriaPoloApp/images/casco2_pp.jpeg' %}" alt="">
+       <h3>Producto No. 5</h3>
+       <p>Descripcion corta del prodcuto...</p>
+       <div class="price">$2.00</div>
+       <div class="buttons">
+          <a href="#" class="cart">Detalles</a>
+       </div>
+    </div>
+ 
+    <div class="preview" data-target="p-6">
+       <i class="fas fa-times"></i>
+       <img src="{% static 'PatriaPoloApp/images/casco3.jpeg' %}" alt="">
+       <h3>Producto No. 6</h3>
+       <p>Descripcion corta del prodcuto...</p>
+       <div class="price">$2.00</div>
+       <div class="buttons">
+          <a href="#" class="cart">Detalles</a>
+       </div>
+    </div>
+</body>
+</html>
+
+ <!--<div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+     <span>( 250 )</span>
+     </div>-->

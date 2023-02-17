@@ -1,0 +1,67 @@
+
+{% extends "PatriaPoloApp/index_base.html" %}
+{% load static %}
+
+{% block content %}
+
+<html>
+  <section class="container3 about">
+      <!--<h2 class="subtitle">Lo mejor de nosotros...</h2>-->
+      <div class="about__main">
+          <article class="about__icons" id="icon1">
+              <img src="{% static 'PatriaPoloApp/images/argentina.png' %}" class="about__icon">
+              <h3 class="about__title">Envíos a todo el país</h3>
+              <p class="about__paragraph">Hacemos envíos a toda la Argentina no importa en que parte te encuentres.</p>
+          </article>
+   
+          <article class="about__icons" id="icon2">
+              <img src="{% static 'PatriaPoloApp/images/pincel-de-artista.png' %}"  class="about__icon" alt="">
+              <h3 class="about__title">Personalizamos todo</h3>
+              <p class="about__paragraph">Todos nuestros productos pueden ser personalizados de la forma que vos quieras.</p>
+          </article>
+   
+          <article class="about__icons" id="icon3">
+              <img src="{% static 'PatriaPoloApp/images/multiple-users-silhouette.png' %}" class="about__icon">
+              <h3 class="about__title">Atención 24/7</h3>
+              <p class="about__paragraph">Contamos con la mejor atención las 24 horas del día los 7 días de la semana.
+              </p>
+          </article>
+      </div>
+   </section>
+
+{% include "productos/favoritos_p.html" %}
+<link rel="stylesheet" href="{% static 'PatriaPoloApp/css/tienda.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<section>
+    <div class="container6">
+       <p class="container6_p">
+        Para acceder a las descripciones de los productos y <br>
+        precios en pesos (ARS), presiona en "Detalles".
+       </p>
+    </div>
+ </section>
+<section class="section_instagram">
+   <div class="container"><h2 class="title-instagram">- Seguinos en Instagram -</h2></div>
+   <div class="container_instagram">
+      <iframe class="imginstagram" width="320" height="440" src="http://instagram.com/p/CdEwstGJygu/embed" frameborder="0"></iframe>
+      <iframe class="imginstagram" width="320" height="440" src="http://instagram.com/p/CjmCkUJsmJl/embed" frameborder="0"></iframe>
+      <iframe class="imginstagram" width="320" height="440" src="http://instagram.com/p/CGlKEXlpESz/embed" frameborder="0"></iframe>
+   </div>
+</section>
+<section>
+   <div class="container6">
+      <p class="container6_p">
+         Estos precios solo están disponibles con entrega en Argentina. <br>
+         No incluyen impuestos aduaneros de importación / exportación ni transporte.
+         Si compras desde otro país, contáctanos para saber los costos de envíos. <br>
+         Los valores en <b>USD</b> están expresados en el precio de venta del dolar blue al
+         día de la fecha en la República Argentina.
+      </p>
+   </div>
+</section>
+</body>
+</html>
+
+{% endblock %}

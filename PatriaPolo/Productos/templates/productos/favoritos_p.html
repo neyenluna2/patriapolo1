@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/tienda.css' %}">
+<div class="container87">
+   <h3 class="title">- destacados -</h3>
+   
+   <div class="products-container">
+      <div class="product" data-name="p-1">
+         <img src="{% static 'JEPG/bolso calavera 3.jpg' %}" alt="">
+         <h3 class="product__title">Bolso <br> premium </h3>
+         <p class="section__product"><i>Bolsos, equipamento...</i></p>
+         <!--<p class="about__paragraph">
+            Bolso de tela, resistente, personalizable.
+         </p>-->
+         <div class="price">-</div>
+         <div class="buttons"><a href="{% url 'Productos:bolsocalavera' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-2">
+         <img src="{% static 'JEPG/botas marron.jpg' %}" alt="">
+         <h3 class="product__title">Botas de <br> cuero</h3>
+         <p class="section__product"><i>Calzado...</i></p>
+         <div class="price">-</div>
+         <div class="buttons"><a href="{% url 'Productos:botasmarrones' %}" class="cart">Detalles</a></div>
+     </div>
+      <div class="product" data-name="p-3" id="argcasco">
+         <img src="{% static 'JEPG/casco argentina 3.jpg' %}" alt="">
+         <h3 class="product__title">Casco "Argentina"</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">117 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascoargentina' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/montura marron 3.jpg' %}" alt="">
+         <h3 class="product__title">Montura <br> marron</h3>
+         <p class="section__product"><i>Monturas...</i></p>
+         <div class="price">230 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:monturadecuero' %}" class="cart">Detalles</a></div>
+      </div>
+   </div>
+</div>
+ <!--<div class="container33">
+    <button class="cta1">Ver todos nuestros productos</button>
+ </div>-->
+ </html>

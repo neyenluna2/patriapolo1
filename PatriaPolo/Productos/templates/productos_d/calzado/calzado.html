@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+{% load static %}
+{% include 'PatriaPoloApp/navbar.html' %}
+<link rel="stylesheet" href="{% static 'PatriaPoloApp/css/tienda.css' %}">
+<div class="container87">
+   <h3 class="title">- CALZADO -</h3>
+  <div class="products-container">
+    <div class="product" data-name="p-2">
+        <img src="{% static 'JEPG/funda botas 2.jpg' %}" alt="">
+        <h3 class="product__title">Funda para botas</h3>
+        <p class="section__product"><i>Calzado...</i></p>
+        <div class="price">-</div>
+        <div class="buttons"><a href="{% url 'Productos:fundas' %}" class="cart">Detalles</a></div>
+    </div>
+    <div class="product" data-name="p-2">
+        <img src="{% static 'JEPG/botas marron.jpg' %}" alt="">
+        <h3 class="product__title">Botas de cuero</h3>
+        <p class="section__product"><i>Calzado...</i></p>
+        <div class="price">-</div>
+        <div class="buttons"><a href="{% url 'Productos:botasmarrones' %}" class="cart">Detalles</a></div>
+    </div>
+  </div>
+</div>
+{% include 'PatriaPoloApp/footer.html' %}

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Nunito+Sans:wght@200&display=swap');
+
+*{
+   font-family: 'Nunito', sans-serif;
+   margin: 0; padding: 0;
+   box-sizing: border-box; 
+   outline: none; border:none;
+   text-decoration: none;
+   transition: all .2s linear;
+   
+}
+
+:root{
+   ---main-color:#dd4c2a;
+   ---second-color: #444;
+   ---title-color: #2A2A2A;
+   ---text-color: rgb(29, 29, 31);
+   ---text-font:  'Noto Sans', sans-serif;
+   ---title-font: 'Nunito Sans', sans-serif;
+   ---text-size-title: 3rem;
+   ---font-weight-title: 2rem;
+   ---font-size-subtitle: 2.6rem;
+   ---font-weight-subtitle: 1.5rem;
+   ---font-size-text: 2rem;
+   ---font-weight-text: 1.2rem;
+
+}
+
+html{
+   font-size: 62.5%;
+}
+
+
+
+/* About */
+
+ .container3{
+   margin-bottom: 2rem;
+   display: flex;
+   justify-content: center;
+ }
+
+.about {
+   text-align: center;
+}
+
+.subtitle {
+   font-size: var(---font-size-subtitle);
+}
+
+
+.about__paragraph {
+   line-height: 1.7;
+   font-size: 1.5rem;
+}
+
+.about__title{
+   font-size: 2rem;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+
+
+.about__main {
+   padding-top: 2rem;
+   display: flex;
+   justify-content: center;
+   width: 90%;
+   margin: 0 auto;
+   overflow: hidden;
+   flex-wrap: wrap;
+}
+
+
+.about__icons {
+   display: grid;
+   gap: 1em;
+   justify-items: center;
+   width: 35rem;
+   overflow: hidden;
+   margin: 1em 2rem;
+   padding: 2rem;
+   border: #dd4c2a solid 1px;
+}
+
+.about__icon {
+   width: 5rem;
+   height: 5rem;
+}
+/* Imagenes de Instagram */
+
+.section_instagram{
+   margin-top: 3rem;
+   background-image: url('../images/polo1.jpg');
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   z-index: 1;
+   padding: 3rem;
+}
+
+.section_instagram::before{
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,0.7);
+   z-index: -1;
+
+}
+
+.title-instagram{
+   font-size: 3rem;
+   font-weight: 600;
+   line-height: 2rem;
+   color:rgb(255, 255, 255);
+   margin: 4rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.container_instagram{
+   display: flex;
+   margin-top: 2rem;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.imginstagram{
+   padding: 1.2rem;
+   margin-bottom: 2rem;
+}
+
+/* container6 */
+.container6{
+   margin: 1.2rem;
+}
+
+.container6_p{
+   text-align: center;
+   font-size: 1.4rem;
+   font-weight: 200;
+}
+
+
+
+@media(max-width: 487px){
+   .title-instagram{
+      text-align: center;
+      white-space: pre;
+      margin: 0 auto;
+   }
+
+}
+
+
+@media(max-width: 280px){
+   .about__icons{
+      border: none;
+      margin: 0px;
+      padding: 0px;
+   }
+   *{
+      margin: 0px;
+   }
+}

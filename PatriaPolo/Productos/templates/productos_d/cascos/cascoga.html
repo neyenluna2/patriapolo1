@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+{% include 'PatriaPoloApp/navbar.html' %}
+<link rel="stylesheet" href="{% static 'PatriaPoloApp/css/productos_descripcion.css' %}">
+<html lang="es">
+<p class="title"><b>- Casco gris oscuro -</b></p> 
+<section class="body">   
+    <div class="container">
+        <div class="img_container">
+            <img src="{% static 'JEPG/casco gris azulado.jpg' %}" alt="" class="main_img">
+        </div>
+        <div class="thumbnail_container">
+            <img class="thumbnail active" src="{% static 'JEPG/casco gris azulado.jpg'' %}" alt="">
+            <img class="thumbnail" src="{% static 'JEPG/casco gris azulado 4.jpg' %}" alt="">
+            <img class="thumbnail" src="{% static 'JEPG/casco gris azulado 2.jpg' %}" alt="">
+            <img class="thumbnail" src="{% static 'JEPG/casco gris azulado 3.jpg' %}" alt="">
+        </div>
+    </div>
+</section>
+<section class="container__text">
+    <p class="description">
+        Descripcion del producto</p>
+    <p class="text_p">
+        - Casco clasico de polo SF, de color gris oscuro con detalles en negro.<br>
+        - Su exterior está hecho con fibra de vidrio trenzada con tela de softshell impermeable.<br>
+        - Incluye orificios de goma de látex que proporcionan ventilación. <br>
+        - La parte interior del casco está hecha con un material delgado de espuma negra para un mayor acolchado y comodidad, sistema de sujeción de tres puntos.
+    </p>
+    <p class="text_p">Mas detalles: Se puede personalizar. </p>
+    <p class="price">Precio: {{precio__dolar}} ARS - 117 USD</p>
+    <p class="text_p"><i>Categoria: Cascos de polo...</i></p>
+    <div class="button1"><button class="buttoninside"><a class="buttonlink" href="https://wa.me/5491158597046?text=Hola,%20quisiera%20consultar%20sobre%20un%20producto%20que%20v%C3%AD...">Consultar por este producto!</a></button></div>
+
+</section>
+<script src="{% static 'PatriaPoloApp/js/products.js' %}"></script>
+{% include 'PatriaPoloApp/footer.html'  %}
+</html>

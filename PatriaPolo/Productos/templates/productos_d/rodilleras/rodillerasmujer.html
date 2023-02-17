@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+{% include 'PatriaPoloApp/navbar.html' %}
+<link rel="stylesheet" href="{% static 'PatriaPoloApp/css/productos_descripcion.css' %}">
+<html lang="es">
+<p class="title"><b>- Rodilleras de mujer -</b></p> 
+<section class="body">   
+    <div class="container">
+        <div class="img_container">
+            <img src="{% static 'JEPG/rodillera negra.jpg' %}" alt="" class="main_img">
+        </div>
+        <div class="thumbnail_container">
+            <img class="thumbnail active" src="{% static 'JEPG/rodillera negra.jpg' %}" alt="">
+            <img class="thumbnail" src="{% static 'JEPG/rodillera negra 2.jpg' %}" alt="">
+            <img class="thumbnail" src="{% static 'JEPG/rodillera marron.jpg' %}" alt="">
+            <img class="thumbnail" src="{% static 'JEPG/rodilleras mix negro y marron.jpg' %}" alt="">
+        </div>
+    </div>
+</section>
+<section class="container__text">
+    <p class="description">
+        Descripcion del producto</p>
+    <p class="text_p">
+        - Rodilleras de 2 tiras de velcro. <br>
+        - Hechas con cuero de primera calidad. <br>
+        - Vienen con dos correas de cuero de velcro para su ajuste y cierre. <br>
+    </p>
+    <p class="text_p">Mas detalles: Disponible en colores HB, London, negro y marrón africano.</p>
+    <p class="price">Precio: </p>
+    <p class="text_p"><i>Categoria: Rodilleras...</i></p>
+    <div class="button1"><button class="buttoninside">Consultar por este producto!</button></div>
+
+</section>
+<script src="{% static 'PatriaPoloApp/js/products.js' %}"></script>
+{% include 'PatriaPoloApp/footer.html'  %}
+</html>

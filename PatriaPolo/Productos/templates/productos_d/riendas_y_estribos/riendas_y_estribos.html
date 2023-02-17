@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+{% load static %}
+{% include 'PatriaPoloApp/navbar.html' %}
+<link rel="stylesheet" href="{% static 'PatriaPoloApp/css/tienda.css' %}">
+<div class="container87">
+   <h3 class="title">- RIENDAS Y ESTRIBOS -</h3>
+   
+  <div class="products-container">
+    <div class="product" data-name="p-2">
+        <img src="{% static 'JEPG/riendas cuero negro.jpg' %}" alt="">
+        <h3 class="product__title">Riendas</h3>
+        <p class="section__product"><i>Riendas y estribos...</i></p>
+        <div class="price">46 USD</div>
+        <div class="buttons"><a href="{% url 'Productos:riendasnegras' %}" class="cart">Detalles</a></div>
+    </div>
+    <div class="product" data-name="p-2">
+        <img src="{% static 'JEPG/estribos 2.jpg' %}" alt="">
+        <h3 class="product__title">Estribos</h3>
+        <p class="section__product"><i>Riendas y estribos...</i></p>
+        <div class="price">50 USD</div>
+        <div class="buttons"><a href="{% url 'Productos:estribos' %}" class="cart">Detalles</a></div>
+    </div>
+  </div>
+</div>
+{% include 'PatriaPoloApp/footer.html' %}

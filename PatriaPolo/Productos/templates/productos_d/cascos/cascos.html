@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+{% load static %}
+{% include 'PatriaPoloApp/navbar.html' %}
+<link rel="stylesheet" href="{% static 'PatriaPoloApp/css/tienda.css' %}">
+<div class="container87">
+   <h3 class="title">- CASCOS DE POLO -</h3>
+   <div class="products-container">
+      <div class="product" data-name="p-1">
+         <img src="{% static 'JEPG/casco amarillo patito.jpg' %}" alt="">
+         <h3 class="product__title">Cascos <br> amarillos</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">120 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cas-amarillos' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-2">
+         <img src="{% static 'JEPG/casco animal print.jpg' %}" alt="">
+         <h3 class="product__title">Cascos "Animal print"</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">117 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cas-print' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-3">
+         <img src="{% static 'JEPG/casco argentina 3.jpg' %}" alt="">
+         <h3 class="product__title">Casco "Argentina"</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">117 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascoargentina' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco azul electrico.jpg' %}" alt="">
+         <h3 class="product__title">Casco azul francia</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">117 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascoazul_f' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-5">
+        <img src="{% static 'JEPG/casco azul marino 4.jpg' %}" alt="">
+        <h3 class="product__title">Casco azul marino</h3>
+        <p class="section__product"><i>Cascos de polo...</i></p>
+        <div class="price">120 USD</div>
+        <div class="buttons"><a href="{% url 'Productos:cascoazul_m' %}" class="cart">Detalles</a></div>
+     </div>
+     <div class="product" data-name="p-6">
+        <img src="{% static 'JEPG/casco azul y beige 2.jpg' %}" alt="">
+        <h3 class="product__title">Casco azul y <br> gris</h3>
+        <p class="section__product"><i>Cascos de polo...</i></p>
+        <div class="price">117 USD</div>
+        <div class="buttons"><a href="{% url 'Productos:cascoazulygris' %}" class="cart">Detalles</a></div>
+     </div>
+     <div class="product" data-name="p-7">
+        <img src="{% static 'JEPG/casco beige 2.jpg' %}" alt="">
+        <h3 class="product__title">Cascos <br> gris</h3>
+        <p class="section__product"><i>Cascos de polo...</i></p>
+        <div class="price">120 USD</div>
+        <div class="buttons"><a href="{% url 'Productos:cascogris' %}" class="cart">Detalles</a></div>
+     </div>
+     <div class="product" data-name="p-4">
+        <img src="{% static 'JEPG/casco blanco y negro con cinta 2.jpg' %}" alt="">
+        <h3 class="product__title">Cascos blanco y negro</h3>
+        <p class="section__product"><i>Cascos de polo...</i></p>
+        <div class="price">117 USD</div>
+        <div class="buttons"><a href="{% url 'Productos:cascobyn' %}" class="cart">Detalles</a></div>
+     </div>
+     <div class="product" data-name="p-4">
+        <img src="{% static 'JEPG/casco bordo 3.jpg' %}" alt="">
+        <h3 class="product__title">Casco <br> bordo</h3>
+        <p class="section__product"><i>Cascos de polo...</i></p>
+        <div class="price">120 USD</div>
+        <div class="buttons"><a href="{% url 'Productos:cascobordo' %}" class="cart">Detalles</a></div>
+     </div>
+      <div class="product" data-name="p-4">
+       <img src="{% static 'JEPG/casco brillo.jpg' %}" alt="">
+       <h3 class="product__title">Casco negro brilloso</h3>
+       <p class="section__product"><i>Cascos de polo...</i></p>
+       <div class="price">117 USD</div>
+       <div class="buttons"><a href="{% url 'Productos:cascobrilloso' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco camuflado celeste 2.jpg' %}" alt="">
+         <h3 class="product__title">Casco cam.<br> "argentina"</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">120 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascocamuflado' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco china 3.jpg' %}" alt="">
+         <h3 class="product__title">Casco <br> "China"</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">119 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascochina' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco degrade rosa y celeste.jpg' %}" alt="">
+         <h3 class="product__title">Cascos en <br> degradé</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">119 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascodegrade' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco flores pastel.jpg' %}" alt="">
+         <h3 class="product__title">Casco blanco con flores</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">128 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascopastel' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco flores rosa y azul.jpg' %}" alt="">
+         <h3 class="product__title">Casco sf <br> con flores</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">117 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascoflores' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco geometrico azul 2.jpg' %}" alt="">
+         <h3 class="product__title">Casco "geométrico"</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">117 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascogeometrico' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco gris 4.jpg' %}" alt="">
+         <h3 class="product__title">Casco gris <br> claro</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">120 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascogrisclaro' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco gris azulado.jpg' %}" alt="">
+         <h3 class="product__title">Casco gris oscuro</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">117 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascoga' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco gris con leon 5.jpg' %}" alt="">
+         <h3 class="product__title">Casco <br> "León"</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">120 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascoleon' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco gris oscuro.jpg' %}" alt="">
+         <h3 class="product__title">Casco verde-gris opáco</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">117 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascogverde' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco gris y celeste 2.jpg' %}" alt="">
+         <h3 class="product__title">Casco gris con detalles celestes</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">120 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascogyc' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco militar blanco y negro.jpg' %}" alt="">
+         <h3 class="product__title">Cascos <br> "Militar"</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">119 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascomilitar' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco naranja.jpg' %}" alt="">
+         <h3 class="product__title">Casco <br> "Orange"</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">117 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:casconaranja' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco negro con detalle celeste.jpg' %}" alt="">
+         <h3 class="product__title">Casco <br> "Wolf"</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">124 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascolobo' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco negro fluo.jpg' %}" alt="">
+         <h3 class="product__title">Casco <br> "Stones"</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">124 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascostones' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco rojo y blanco.jpg' %}" alt="">
+         <h3 class="product__title">Cascos rojos y blanco</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">120 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascoryb' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco rosa bebe 2.jpg' %}" alt="">
+         <h3 class="product__title">Cascos <br> rosas</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">120 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascorosab' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco tropical.jpg' %}" alt="">
+         <h3 class="product__title">Casco <br> "Tropical"</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">120 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascotropical' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco verde pastel.jpg' %}" alt="">
+         <h3 class="product__title">Casco verde pastel</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">120 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascopastelverde' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco verde y blanco 4.jpg' %}" alt="">
+         <h3 class="product__title">Casco verde oscuro</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">120 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascoverde' %}" class="cart">Detalles</a></div>
+      </div>
+      <div class="product" data-name="p-4">
+         <img src="{% static 'JEPG/casco violeta y negro.jpg' %}" alt="">
+         <h3 class="product__title">Casco violeta y negro</h3>
+         <p class="section__product"><i>Cascos de polo...</i></p>
+         <div class="price">120 USD</div>
+         <div class="buttons"><a href="{% url 'Productos:cascovioleta' %}" class="cart">Detalles</a></div>
+      </div>
+   </div>
+</div>
+
+</html>
+{% include 'PatriaPoloApp/footer.html' %}

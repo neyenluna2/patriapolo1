@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+{% load static %}
+{% include 'PatriaPoloApp/navbar.html' %}
+<link rel="stylesheet" href="{% static 'PatriaPoloApp/css/tienda.css' %}">
+<div class="container87">
+   <h3 class="title">- MONTURAS -</h3>
+   
+  <div class="products-container">
+    <div class="product" data-name="p-4">
+        <img src="{% static 'JEPG/montura marron 3.jpg' %}" alt="">
+        <h3 class="product__title">Montura marron</h3>
+        <p class="section__product"><i>Monturas, riendas...</i></p>
+        <div class="price">230 USD</div>
+        <div class="buttons"><a href="{% url 'Productos:monturadecuero' %}" class="cart">Detalles</a></div>
+     </div>
+  </div>
+</div>
+{% include 'PatriaPoloApp/footer.html' %}

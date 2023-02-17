@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+{% include 'PatriaPoloApp/navbar.html' %}
+<link rel="stylesheet" href="{% static 'PatriaPoloApp/css/productos_descripcion.css' %}">
+<html lang="es">
+<p class="title"><b>- Bolso Premium -</b></p> 
+<section class="body">   
+    <div class="container">
+        <div class="img_container">
+            <img src="{% static 'JEPG/bolso calavera 3.jpg' %}" alt="" class="main_img">
+        </div>
+        <div class="thumbnail_container">
+            <img class="thumbnail active" src="{% static 'JEPG/bolso calavera 3.jpg' %}" alt="">
+            <img class="thumbnail" src="{% static 'JEPG/bolso calavera 2.jpg' %}" alt="">
+            <img class="thumbnail" src="{% static 'JEPG/bolso calavera.jpg' %}" alt="">
+        </div>
+    </div>
+</section>
+<section class="container__text">
+    <p class="description">
+        Descripcion del producto</p>
+    <p class="text_p">
+        - Bolso de calidad amplio <br>
+        - Con manijas y costuras en cuero para mayor resistencia<br>
+        - Con cierre, ideal para llevar tus cosas de la manera mas segura
+    </p>
+    <p class="text_p">Mas detalles: Se puede estampar el dibujo que quieras en el lugar de la calavera.</p>
+    <p class="price">Precio: -.</p>
+    <p class="text_p"><i>Categoria: Bolsos, indumentaria...</i></p>
+    <div class="button1"><button class="buttoninside">Consultar por este producto!</button></div>
+
+</section>
+<script src="{% static 'PatriaPoloApp/js/products.js' %}"></script>
+{% include 'PatriaPoloApp/footer.html'  %}
+</html>

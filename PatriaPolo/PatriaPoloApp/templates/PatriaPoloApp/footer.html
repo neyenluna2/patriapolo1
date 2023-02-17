@@ -1,0 +1,50 @@
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- font awesome cdn link iconos -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/regular.min.css" integrity="sha512-aNH2ILn88yXgp/1dcFPt2/EkSNc03f9HBFX0rqX3Kw37+vjipi1pK3L9W08TZLhMg4Slk810sPLdJlNIjwygFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+{% load static %}
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="{% static 'PatriaPoloApp/css/footer.css' %}">
+
+
+<!-- Footer -->
+<section class="bodyfooter">
+    <footer>
+       <div class="footer-container">
+          <div class="footer-content-container">
+             <h3 class="website-logo"><a href="{% url 'Inicio' %}" class="logopp">Patria Polo</a></h3>
+             <a href="https://wa.me/5491158597046?text=Hola,%20quisiera%20consultar%20sobre%20un%20producto%20que%20v%C3%AD..." class="footer-info">Chat de WhatsApp</a>
+             <span class="footer-info"></span>
+          </div>
+          <div class="footer-menus">
+             <div class="footer-content-container">
+                   <span class="menu-title">menu</span>
+                   <a href="{% url 'Productos:cascos' %}" class="menu-item-footer">Cascos</a>
+                   <a href="{% url 'Productos:monturas' %}" class="menu-item-footer">Monturas</a>
+                   <a href="{% url 'Productos:rodilleras' %}" class="menu-item-footer">Rodilleras</a>
+             </div>
+             <div class="footer-content-container">
+                   <span class="menu-title">productos</span>
+                   <a href="{% url 'Productos:riendas' %}" class="menu-item-footer">Riendas</a>
+                   <a href="{% url 'Productos:calzado' %}" class="menu-item-footer">Calzado</a>
+                   <a href="{% url 'Nosotros' %}" class="menu-item-footer">Nosotros</a>
+             </div>
+          </div>
+        
+          <div class="footer-content-container">
+             <span class="menu-title">Redes sociales</span>
+             <div class="social-container">
+                   <a href="" class="social-link"></a>
+                   <a href="" class="social-link"></a>
+                   <a href="https://www.instagram.com/patriapolo_/?utm_source=ig_embed&ig_rid=a1ada206-8950-4953-9c62-f4279ab8a3fb" class="social-link"></a>
+             </div>
+          </div>
+       </div>
+       <div class="copyright-container">
+          <span class="copyright">&copy Patria Polo 2022, Todos los derechos reservados | Desarrollado por Neyen Luna | Versión de web: 1.0.</span>
+       </div>
+    </footer>
+ </section>

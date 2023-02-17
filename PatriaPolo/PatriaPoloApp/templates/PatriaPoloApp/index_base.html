@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   {% load static %}
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/regular.min.css" integrity="sha512-aNH2ILn88yXgp/1dcFPt2/EkSNc03f9HBFX0rqX3Kw37+vjipi1pK3L9W08TZLhMg4Slk810sPLdJlNIjwygFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="{% static 'PatriaPoloApp/css/style.css' %}">
+   <link rel="stylesheet" href="{% static 'PatriaPoloApp/css/navbar.css' %}">
+   <link rel="stylesheet" href="{% static 'PatriaPoloApp/css/tienda.css' %}">
+   <link rel="stylesheet" href="{% static 'PatriaPoloApp/css/navbar1.css' %}">
+   <link rel="icon" type="image" href="{% static 'JEPG/logonuevo.ico' %}">
+   <title>Patria Polo, Articulos de polo</title>
+
+   <!-- custom js file link  -->
+   <script src="{% static 'PatriaPoloApp/js/script.js' %}" defer></script>
+   <script src="{% static 'PatriaPoloApp/js/navbar.js' %}" defer></script>
+</head>
+<!-- Nav Bar New -->
+{% include 'PatriaPoloApp/navbar.html' %}
+<!-- Nav Bar -->
+<body>
+   <header class="hero">
+       <section class="hero__container container2">
+         <h1 class="hero__title">Bienvenidos a Patria Polo</h1>
+         <p class="hero__paragraph"><i>Todo lo que necesitas para ser un profesional del polo!</i></p>
+         <a href="https://wa.me/5491158597046?text=Hola,%20quisiera%20consultar%20sobre%20un%20producto%20que%20v%C3%AD..." class="cta">Contáctanos por WhatsApp ahora!</a>
+       </section>
+   </header>
+</body>
+
+<!-- Contenido cambiante -->
+
+{% block content %}
+
+
+{% endblock %}
+{% include 'PatriaPoloApp/footer.html'  %}
+</html>

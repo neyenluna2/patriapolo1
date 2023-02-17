@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+{% load static %}
+{% include 'PatriaPoloApp/navbar.html' %}
+<link rel="stylesheet" href="{% static 'PatriaPoloApp/css/tienda.css' %}">
+<div class="container87">
+   <h3 class="title">- CINTURONES y mas -</h3>
+   
+  <div class="products-container">
+    <div class="product" data-name="p-4">
+        <img src="{% static 'JEPG/cinturon blanco y negro.jpg' %}" alt="">
+        <h3 class="product__title">Sobrecinchas</h3>
+        <p class="section__product"><i>Accesorios, cinturones y mas...</i></p>
+        <div class="price">21 USD</div>
+        <div class="buttons"><a href="{% url 'Productos:sobresincha' %}" class="cart">Detalles</a></div>
+     </div>
+     <div class="product" data-name="p-4">
+      <img src="{% static 'JEPG/kit cinturones.jpg' %}" alt="">
+      <h3 class="product__title">Cinturones</h3>
+      <p class="section__product"><i>Accesorios, cinturones y mas...</i></p>
+      <div class="price">25 USD</div>
+      <div class="buttons"><a href="{% url 'Productos:cinturon' %}" class="cart">Detalles</a></div>
+   </div>
+  </div>
+</div>
+{% include 'PatriaPoloApp/footer.html' %}

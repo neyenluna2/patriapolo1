@@ -1,0 +1,63 @@
+{% include 'PatriaPoloApp/navbar.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'PatriaPoloApp/css/questions.css' %}">
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<section class="questions container1">
+   <h2 class="subtitle">PREGUNTAS FRECUENTES</h2>
+   <p class="questions__paragraph">Aquí hay preguntas frecuentes que tienen ustedes, ante cualquier otra consulta no dudes en preguntarnos a nuestro WhatsApp!.</p>
+
+   <section class="questions__container">
+       <article class="questions__padding">
+           <div class="questions__answer">
+               <h3 class="questions__title">¿Quiénes somos?
+                   <span class="questions__arrow">
+                       <img src="{% static 'PatriaPoloApp/images/arrow.svg' %}" class="questions__img">
+                   </span>
+               </h3>
+
+               <p class="questions__paragraph questions__show">Nos dedicamos a fabricar todo tipo de artículos de polo, para brindarles a ustedes la mejor calidad posible lo que hacemos es trabajar <br> con productos de óptima calidad para que cada producto sea único.</p>
+           </div>
+       </article>
+
+       <article class="questions__padding">
+           <div class="questions__answer">
+               <h3 class="questions__title">¿Hacemos envíos nacionales y/o internacionales?
+                   <span class="questions__arrow">
+                       <img src="{% static 'PatriaPoloApp/images/arrow.svg' %}" class="questions__img">
+                   </span>
+               </h3>
+
+               <p class="questions__paragraph questions__show">Si, realizamos envíos a toda la República Argentina y también contamos con envíos internacionales, estos estan sujetos a costos que van <br> variando
+               según en donde te encuentres. Para conocer estos costos contáctate con nosotros mediante WhatsApp.</p>
+           </div>
+       </article>
+
+       <article class="questions__padding">
+           <div class="questions__answer">
+               <h3 class="questions__title">¿Que métodos de pago aceptamos?
+                   <span class="questions__arrow">
+                       <img src="{% static 'PatriaPoloApp/images/arrow.svg' %}" class="questions__img">
+                   </span>
+               </h3>
+
+               <p class="questions__paragraph questions__show">Aceptamos todo tipo de método de pago, tarjetas de débito, crédito, Mercado Pago, PayPal entre otras.</p>
+           </div>
+       </article>
+   </section>
+</section>
+<script src="{% static 'PatriaPoloApp/js/preguntas_frecuentes.js' %}"></script>
+</body>
+</html>
+
+{% endblock %}
+{% include 'PatriaPoloApp/footer.html'  %}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+{% load static %}
+{% include 'PatriaPoloApp/navbar.html' %}
+<link rel="stylesheet" href="{% static 'PatriaPoloApp/css/tienda.css' %}">
+<div class="container87">
+   <h3 class="title">- rodilleras -</h3>
+   
+  <div class="products-container">
+    <div class="product" data-name="p-4">
+        <img src="{% static 'JEPG/rodilleras negro.jpg' %}" alt="">
+        <h3 class="product__title">Rodilleras de niño</h3>
+        <p class="section__product"><i>Rodilleras...</i></p>
+        <div class="price"></div>
+        <div class="buttons"><a href="{% url 'Productos:rodillerasniño' %}" class="cart">Detalles</a></div>
+     </div>
+     <div class="product" data-name="p-4">
+        <img src="{% static 'JEPG/rodillera negra.jpg' %}" alt="">
+        <h3 class="product__title">rodilleras de mujer</h3>
+        <p class="section__product"><i>Rodilleras...</i></p>
+        <div class="price"></div>
+        <div class="buttons"><a href="{% url 'Productos:rodillerasmujer' %}" class="cart">Detalles</a></div>
+     </div>
+     <div class="product" data-name="p-4">
+        <img src="{% static 'JEPG/rodilleras marron 4.jpg' %}" alt="">
+        <h3 class="product__title">rodilleras de adulto</h3>
+        <p class="section__product"><i>Rodilleras...</i></p>
+        <div class="price"></div>
+        <div class="buttons"><a href="{% url 'Productos:rodillerasadulto' %}" class="cart">Detalles</a></div>
+     </div>
+  </div>
+</div>
+{% include 'PatriaPoloApp/footer.html' %}

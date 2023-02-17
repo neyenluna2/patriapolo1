@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+{% include 'PatriaPoloApp/navbar.html' %}
+<link rel="stylesheet" href="{% static 'PatriaPoloApp/css/productos_descripcion.css' %}">
+<html lang="es">
+<p class="title"><b>- Monturas de cuero -</b></p> 
+<section class="body">   
+    <div class="container">
+        <div class="img_container">
+            <img src="{% static 'JEPG/montura marron 3.jpg' %}" alt="" class="main_img">
+        </div>
+        <div class="thumbnail_container">
+            <img class="thumbnail active" src="{% static 'JEPG/montura marron 3.jpg' %}" alt="">
+            <img class="thumbnail" src="{% static 'JEPG/montura marron 3.jpg' %}" alt="">
+            <img class="thumbnail" src="{% static 'JEPG/montura marron y negro.jpg' %}" alt="">
+            <img class="thumbnail" src="{% static 'JEPG/montura cuero marron.jpg' %}" alt="">
+        </div>
+    </div>
+</section>
+<section class="container__text">
+    <p class="description">
+        Descripcion del producto</p>
+    <p class="text_p">
+        - Montura de color marron 100% de cuero <br>
+        - Costuras firmes  para mayor resistencia<br>
+        - Excelente comodidad y suave al tacto.
+    </p>
+    <p class="text_p">Mas detalles: Se puede personalizar.</p>
+    <p class="price">Precio: {{precio__dolar}} ARS - 230 USD</p>
+    <p class="text_p"><i>Categoria: Monturas...</i></p>
+    <div class="button1"><button class="buttoninside"><a class="buttonlink" href="https://wa.me/5491158597046?text=Hola,%20quisiera%20consultar%20sobre%20un%20producto%20que%20v%C3%AD...">Consultar por este producto!</a></button></div>
+
+</section>
+<script src="{% static 'PatriaPoloApp/js/products.js' %}"></script>
+{% include 'PatriaPoloApp/footer.html'  %}
+</html>
