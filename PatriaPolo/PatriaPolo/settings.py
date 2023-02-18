@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'PatriaPoloApp',
-    'Productos',
-    'Nosotros',
+    'PatriaPoloApp.apps',
+    'Productos.apps',
+    'Nosotros.apps',
 ]
 
 MIDDLEWARE = [
